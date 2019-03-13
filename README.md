@@ -15,7 +15,8 @@ allow for running each exercise from command line.
 
 ## Command Line Interface:
 \*each subcommand that isn't mentioned below doesn't have submenu 
-and is run just by typing ```rust_lang_book [SUBOMMAND]```.
+and is run just by typing  
+```rust_lang_book [SUBOMMAND]```.
 
 ### Main command:
     
