@@ -1,0 +1,9 @@
+# rust
+*/Cargo.lock
+*.rs.bk
+target
+build
+**/*.rs.bk
+
+# jetbrains
+.idea/

@@ -1,0 +1,16 @@
+[package]
+name = "rust_lang_book"
+version = "0.1.0"
+authors = ["DamianSkrzypczak <damian.piotr.skrzypczak@gmail.com>"]
+edition = "2018"
+
+
+[dependencies.clap]
+version = ">= 2.32"
+features = [ "suggestions", "color", "yaml" ]
+
+[dependencies]
+guessing_game = { path = "excercises/guessing_game" }
+hello = { path = "excercises/hello" }
+functions = { path = "excercises/functions" }
+temperature_converter = { path = "excercises/temperature_converter" }

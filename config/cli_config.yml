@@ -1,0 +1,40 @@
+name: Rust Book Excercises
+version: "0.1.0"
+author: DamianSkrzypczak <damian.piotr.skrzypczak@gmail.com>
+about: Rust book exercises with CLI interface
+
+settings:
+  - ArgRequiredElseHelp
+
+subcommands:
+  - hello:
+      about: Runs hello_world and hello_cargo
+      version: "0.1.0"
+      author: DamianSkrzypczak <damian.piotr.skrzypczak@gmail.com>
+  - guessing-game:
+      about: Guess-the-number game
+      version: "0.1.0"
+      author: DamianSkrzypczak <damian.piotr.skrzypczak@gmail.com>
+  - functions:
+      about: Check the functions
+      version: "0.1.0"
+      author: DamianSkrzypczak <damian.piotr.skrzypczak@gmail.com>
+  - temperature-converter:
+      about: Convert temperature between Celsius and Fahrenheit
+      version: "0.1.0"
+      author: DamianSkrzypczak <damian.piotr.skrzypczak@gmail.com>
+      args:
+        - from-fahrenheit:
+            short: f
+            long: from-fahrenheit
+            value_name: NUMBER
+            help: Convert Fahrenheit to Celsius
+            takes_value: true
+        - from-celsius:
+            short: c
+            long: from-celsius
+            value_name: NUMBER
+            help: Convert Celsius to Fahrenheit
+            takes_value: true
+      settings:
+        - ArgRequiredElseHelp
